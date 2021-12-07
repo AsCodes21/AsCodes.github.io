@@ -1,0 +1,15 @@
+.container{
+    width:70vw !important;
+    margin:auto !important;
+    margin-top: 40px !important;
+}
+.toolbar-item button{
+    cursor:pointer !important;
+    color:white !important;
+    border:1px solid white !important;
+    border-radius:15px !important;
+    padding:5px 14px !important; 
+}
+#Lang{
+    text-align: center;
+}

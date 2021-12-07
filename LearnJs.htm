@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="prism.css">
+        <script src="prism.js"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous">
+
+        <title>My Codes</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src = "Logo.png" style = "width:62px;margin-bottom:3px;margin-right:10px">AsCodes(My Codes)</a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="./index.htm">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./About.htm">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Contact me.htm">Contact me</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="mailto:anmolsinha345@gmail.com? subject = 'Your subject' "target="_blank" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="./MyCodes.htm">My Codes</a></li>
+                              <li><a class="dropdown-item" href="https://www.youtube.com" target="_blank">My Yt Channel</a></li>
+                              <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.1/getting-started/introduction/"Open Bootstrap target="_blank"</a>Open Bootstrap</li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Mail me</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                                id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Select language
+                            </a>
+                            <ul class="dropdown-menu"
+                                aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./Web-Dev.htm">Web-Developement 🗸</a></li>
+                                <!-- <li><a class="dropdown-item" href="./MyCodesCss.htm">CSS</a></li>
+                                <li><a class="dropdown-item" href="./MyCodesJs.htm">JavaScript 🗸</a></li> -->
+                                <li><a class="dropdown-item" href="./MyCodesPython.htm">Python</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="./AsCodes.htm">Home</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li> -->
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search"
+                            placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <h1 id = Lang>Learn JavaScript with me</h1>
+        <a class="btn btn-outline-dark" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style = "margin-left:10px;">
+            More About Js 
+          </a>          
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">More About Js</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Here you can learn Js with me as a Cheat Sheet is being creating and you can also get my source codes.
+              </div>
+              <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  More
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="./LearnJs.htm">Learn Js with me 🗸</a></li>
+                  <li><a class="dropdown-item" href="./Web-Dev.htm">Web-Development Source Code</a></li>
+                  <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        <ol class = container>
+            <li>
+                <b>Adding JS</b>-Liking JS file to Html file. 
+                <pre class = "language-Html"><code>&lt!DOCTYPE html&gt
+&lthtml lang="en"&gt
+&lthead&gt
+    &ltmeta charset="UTF-8"&gt
+    &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+    &ltlink rel="stylesheet" href="Your file.css"&gt
+    Use Script source element to add Js file
+    &ltscript src="Your file.js"&gt&lt/script&gt
+    &lttitle&gtMy Title&lt/title&gt
+&lt/head&gt
+&ltbody&gt
+    &lth1&gtHello World!&lt/h1&gt
+&lt/body&gt
+&lt/html&gt</code></pre>
+            </li>
+        </ol>
+        <div class="container">
+          <p>Set of JavaScript basic syntax to add, execute and write basic programming paradigms in Javascript&nbsp;</p>
+<h3>On Page Script</h3>
+<p>Adding internal JavaScript to HTML</p>
+<pre class="language-markup"><code>&lt;script type="text/javascript"&gt; //JS code goes here &lt;/script&gt;
+</code></pre>
+<h3>External JS File</h3>
+<p>Adding external JavaScript to HTML</p>
+<pre class="language-markup"><code>&lt;script src="filename.js"&gt;&lt;/script&gt;</code></pre>
+<h3>Functions</h3>
+<p>JavaScript Function syntax</p>
+<pre class="language-javascript"><code>function nameOfFunction () {
+// function body 
+}</code></pre>
+<h3>DOM Element</h3>
+<p>Changing content of a DOM Element</p>
+<pre class="language-javascript"><code>document.getElementById("elementID").innerHTML = "Hello World!";</code></pre>
+<h3>Output</h3>
+<p>This will print the value of a in JavaScript console</p>
+<pre class="language-javascript"><code>console.log(a);</code></pre>
+<h2>Conditional Statements</h2>
+<p>Conditional statements are used to perform operations based on some conditions.</p>
+<h3>If Statement</h3>
+<p>The block of code to be executed, when the condition specified is true.</p>
+<pre class="language-javascript"><code>if (condition) {
+// block of code to be executed if the condition is true
+}</code></pre>
+<h3>If-else Statement</h3>
+<p>If the condition for the if block is false, then the else block will be executed.</p>
+<pre class="language-javascript"><code>if (condition) {
+// block of code to be executed if the condition is true
+} else {
+// block of code to be executed if the condition is false
+}</code></pre>
+<h3>Else-if Statement</h3>
+<p>A basic if-else ladder</p>
+<pre class="language-javascript"><code>if (condition1) {
+// block of code to be executed if condition1 is true
+} else if (condition2) {
+// block of code to be executed if the condition1 is false and condition2 is true
+} else {
+// block of code to be executed if the condition1 is false and condition2 is false
+}</code></pre>
+<h3>Switch Statement</h3>
+<p>Switch case statement in JavaScript</p>
+<pre class="language-javascript"><code>switch(expression) {
+case x:
+// code block
+break;
+case y:
+// code block
+break;
+default:
+// code block
+}</code></pre>
+<p></p></div><div><div>
+<h2>Iterative Statements (Loops)</h2>
+<p>Iterative statement facilitates programmer to execute any block of code lines repeatedly and can be controlled as per conditions added by the programmer.</p>
+<h3>For Loop</h3>
+<p>For loop syntax in javascript</p>
+<pre class="language-javascript"><code>for (statement 1; statement 2; statement 3) {
+// code block to be executed
+}</code></pre>
+<h3>While Loop</h3>
+<p>Runs the code till the specified condition is true</p>
+<pre class="language-javascript"><code>while (condition) {
+// code block to be executed
+}</code></pre>
+<h3>Do While Loop</h3>
+<p>A do while loop is executed at least once despite the condition being true or false</p>
+<pre class="language-javascript"><code>do {
+// run this code in block
+i++;
+} while (condition);</code></pre>
+<h2>Strings</h2>
+<p>The string is a sequence of characters that is used for storing and managing text data.</p>
+<h3>charAt method</h3>
+<p>Returns the character from the specified index.</p>
+<pre class="language-javascript"><code>str.charAt(3)</code></pre>
+<h3>concat method</h3>
+<p>Joins two or more strings together.</p>
+<pre class="language-javascript"><code>str1.concat(str2)</code></pre>
+<h3>index of method</h3>
+<p>Returns the index of the first occurrence of the specified character from the string else -1 if not found.</p>
+<pre class="language-javascript"><code>str.indexOf('substr')</code></pre>
+<h3>match method</h3>
+<p>Searches a string for a match against a regular expression.</p>
+<pre class="language-javascript"><code>str.match(/(chapter \d+(\.\d)*)/i;)</code></pre>
+<h3>replace method</h3>
+<p>Searches a string for a match against a specified string or char and returns a new string by replacing the specified values.</p>
+<pre class="language-javascript"><code>str1.replace(str2)</code></pre>
+<h3>search method</h3>
+<p>Searches a string against a specified value.</p>
+<pre class="language-javascript"><code>str.search('term')</code></pre>
+<h3>split method</h3>
+<p>Splits a string into an array consisting of substrings.</p>
+<pre class="language-javascript"><code>str.split('\n')</code></pre>
+<h3>substring method</h3>
+<p>Returns a substring of a string containing characters from the specified indices.</p>
+<pre class="language-javascript"><code>str.substring(0,5)</code></pre>
+<p></p></div><app-adsense adtype="ad" _nghost-sc50=""><div _ngcontent-sc50="" class="text-center"><div _ngcontent-sc50="" class="text-center"><ins _ngcontent-sc50="" data-ad-client="ca-pub-9655830461045889" data-ad-slot="7409118598" class="adsbygoogle" style="display: inline-block; width: 250px; height: 200px;"></ins></div><!----><!----><!----><!----></div></app-adsense></div><div><div>
+<h2>Arrays</h2>
+<p>The array is a collection of data items of the same type. In simple terms, it is a variable that contains multiple values.</p>
+<h3>variable</h3>
+<p>Containers for storing data.</p>
+<pre class="language-javascript"><code>var fruit = ["element1", "element2", "element3"];</code></pre>
+<h3>concat method</h3>
+<p>Joins two or more arrays together.</p>
+<pre class="language-javascript"><code>concat()</code></pre>
+<h3>indexOf method</h3>
+<p>Returns the index of the specified item from the array.</p>
+<pre class="language-javascript"><code>indexOf()</code></pre>
+<h3>join method</h3>
+<p>Converts the array elements to a string.</p>
+<pre class="language-javascript"><code>join()</code></pre>
+<h3>pop method</h3>
+<p>Deletes the last element of the array.</p>
+<pre class="language-javascript"><code>pop()</code></pre>
+<h3>reverse method</h3>
+<p>This method reverses the order of the array elements.</p>
+<pre class="language-javascript"><code>reverse()</code></pre>
+<h3>sort method</h3>
+<p>Sorts the array elements in a specified manner.</p>
+<pre class="language-javascript"><code>sort()</code></pre>
+<h3>toString method</h3>
+<p>Converts the array elements to a string.</p>
+<pre class="language-javascript"><code>toString()</code></pre>
+<h3>valueOf method</h3>
+<p>returns the relevant Number Object holding the value of the argument passed</p>
+<pre class="language-javascript"><code>valueOf()</code></pre>
+<h2>Number Methods</h2>
+<p>JS math and number objects provide several constant and methods to perform mathematical operations.</p>
+<h3>toExponential method</h3>
+<p>Converts a number to its exponential form.</p>
+<pre class="language-javascript"><code>toExponential()</code></pre>
+<h3>toPrecision method</h3>
+<p>Formats a number into a specified length.</p>
+<pre class="language-javascript"><code>toPrecision()</code></pre>
+<h3>toString method</h3>
+<p>Converts an object to a string</p>
+<pre class="language-javascript"><code>toString()</code></pre>
+<h3>valueOf method</h3>
+<p>Returns the primitive value of a number.</p>
+<pre class="language-javascript"><code>valueOf()</code></pre>
+<h2>Maths Methods</h2>
+<h3>ceil method</h3>
+<p>Rounds a number upwards to the nearest integer, and returns the result</p>
+<pre class="language-javascript"><code>ceil(x)</code></pre>
+<h3>exp method</h3>
+<p>Returns the value of E^x.</p>
+<pre class="language-javascript"><code>exp(x)</code></pre>
+<h3>log method</h3>
+<p>Returns the logarithmic value of x.</p>
+<pre class="language-javascript"><code>log(x)</code></pre>
+<h3>pow method</h3>
+<p>Returns the value of x to the power y.</p>
+<pre class="language-javascript"><code>pow(x,y)</code></pre>
+<h3>random method</h3>
+<p>Returns a random number between 0 and 1.</p>
+<pre class="language-javascript"><code>random()</code></pre>
+<h3>sqrt method</h3>
+<p>Returns the square root of a number x</p>
+<pre class="language-javascript"><code>sqrt(x)</code></pre>
+<p></p></div><app-adsense adtype="ad" _nghost-sc50=""><div _ngcontent-sc50="" class="text-center"><div _ngcontent-sc50="" class="text-center"><ins _ngcontent-sc50="" data-ad-client="ca-pub-9655830461045889" data-ad-slot="7409118598" class="adsbygoogle" style="display: inline-block; width: 250px; height: 200px;"></ins></div><!----><!----><!----><!----></div></app-adsense></div><div><div>
+<h2>Dates</h2>
+<p>Date object is used to get the year, month and day. It has methods to get and set day, month, year, hour, minute, and seconds.</p>
+<h3>Pulling Date from the Date object</h3>
+<p>Returns the date from the date object</p>
+<pre class="language-javascript"><code>getDate()</code></pre>
+<h3>Pulling Day from the Date object</h3>
+<p>Returns the day from the date object</p>
+<pre class="language-javascript"><code>getDay()</code></pre>
+<h3>Pulling Hours from the Date object</h3>
+<p>Returns the hours from the date object</p>
+<pre class="language-javascript"><code>getHours()</code></pre>
+<h3>Pulling Minutes from the Date object</h3>
+<p>Returns the minutes from the date object</p>
+<pre class="language-javascript"><code>getMinutes()</code></pre>
+<h3>Pulling Seconds from the Date object</h3>
+<p>Returns the seconds from the date object</p>
+<pre class="language-javascript"><code>getSeconds()</code></pre>
+<h3>Pulling Time from the Date object</h3>
+<p>Returns the time from the date object</p>
+<pre class="language-javascript"><code>getTime()</code></pre>
+<h2>Mouse Events</h2>
+<p>Any change in the state of an object is referred to as an Event. With the help of JS, you can handle events, i.e., how any specific HTML tag will work when the user does something.</p>
+<h3>click</h3>
+<p>Fired when an element is clicked</p>
+<pre class="language-javascript"><code>element.addEventListener('click', ()=&gt;{
+// Code to be executed when the event is fired
+});</code></pre>
+<h3>oncontextmenu</h3>
+<p>Fired when an element is right-clicked</p>
+<pre class="language-javascript"><code>element.addEventListener('contextmenu', ()=&gt;{
+// Code to be executed when the event is fired
+});</code></pre>
+<h3>dblclick</h3>
+<p>Fired when an element is double-clicked</p>
+<pre class="language-javascript"><code>element.addEventListener('dblclick', ()=&gt;{
+// Code to be executed when the event is fired
+});</code></pre>
+<h3>mouseenter</h3>
+<p>Fired when an element is entered by the mouse arrow</p>
+<pre class="language-javascript"><code>element.addEventListener('mouseenter', ()=&gt;{
+// Code to be executed when the event is fired
+});</code></pre>
+<h3>mouseleave</h3>
+<p>Fired when an element is exited by the mouse arrow</p>
+<pre class="language-javascript"><code>element.addEventListener('mouseleave', ()=&gt;{
+// Code to be executed when the event is fired
+});</code></pre>
+<h3>mousemove</h3>
+<p>Fired when the mouse is moved inside the element</p>
+<pre class="language-javascript"><code>element.addEventListener('mousemove', ()=&gt;{
+// Code to be executed when the event is fired
+});</code></pre>
+<h2>Keyboard Events</h2>
+<h3>keydown</h3>
+<p>Fired when the user is pressing a key on the keyboard</p>
+<pre class="language-javascript"><code>element.addEventListener('keydown', ()=&gt;{
+// Code to be executed when the event is fired
+});</code></pre>
+<h2>&nbsp;</h2>
+<h3>keypress</h3>
+<p>Fired when the user presses the key on the keyboard</p>
+<pre class="language-javascript"><code>element.addEventListener('keypress', ()=&gt;{
+// Code to be executed when the event is fired
+});</code></pre>
+<h3>keyup</h3>
+<p>Fired when the user releases a key on the keyboard</p>
+<pre class="language-javascript"><code>element.addEventListener('keyup', ()=&gt;{
+// Code to be executed when the event is fired
+});</code></pre>
+<p></p></div><app-adsense adtype="ad" _nghost-sc50=""><div _ngcontent-sc50="" class="text-center"><div _ngcontent-sc50="" class="text-center"><ins _ngcontent-sc50="" data-ad-client="ca-pub-9655830461045889" data-ad-slot="7409118598" class="adsbygoogle" style="display: inline-block; width: 250px; height: 200px;"></ins></div><!----><!----><!----><!----></div></app-adsense></div><div><div>
+<h2>Errors</h2>
+<p>Errors are thrown by the compiler or interpreter whenever they find any fault in the code, and it can be of any type like syntax error, run-time error, logical error, etc. JS provides some functions to handle the errors.</p>
+<h3>try and catch</h3>
+<p>Try the code block and execute catch when err is thrown</p>
+<pre class="language-javascript"><code>try {
+Block of code to try
+}
+catch(err) {
+Block of code to handle errors
+}</code></pre>
+<h2>Window Methods</h2>
+<p>Methods that are available from the window object</p>
+<h3>alert method</h3>
+<p>Used to alert something on the screen</p>
+<pre class="language-javascript"><code>alert()</code></pre>
+<h3>blur method</h3>
+<p>The blur() method removes focus from the current window.</p>
+<pre class="language-javascript"><code>blur()</code></pre>
+<h3>setInterval</h3>
+<p>Keeps executing code at a certain interval</p>
+<pre class="language-javascript"><code>setInterval(() =&gt; {
+// Code to be executed
+}, 1000);</code></pre>
+<h3>setTimeout</h3>
+<p>Executes the code after a certain interval of time</p>
+<pre class="language-javascript"><code>setTimeout(() =&gt; {
+// Code to be executed
+}, 1000);</code></pre>
+<h3>close</h3>
+<p>The Window. close() method closes the current window</p>
+<pre class="language-javascript"><code>window.close()</code></pre>
+<h3>confirm</h3>
+<p>The window.confirm() instructs the browser to display a dialog with an optional message, and to wait until the user either confirms or cancels</p>
+<pre class="language-javascript"><code>window.confirm('Are you sure?')</code></pre>
+<h3>open</h3>
+<p>Opens a new window</p>
+<pre class="language-javascript"><code>window.open("https://www.codewithharry.com");</code></pre>
+<h3>prompt</h3>
+<p>Prompts the user with a text and takes a value. Second parameter is the default value</p>
+<pre class="language-javascript"><code>var name = prompt("What is your name?", "Harry");</code></pre>
+<h3>scrollBy</h3>
+<pre class="language-javascript"><code>window.scrollBy(100, 0); // Scroll 100px to the right</code></pre>
+<h3>scrollTo</h3>
+<p>Scrolls the document to the specified coordinates.</p>
+<pre class="language-javascript"><code>window.scrollTo(500, 0); // Scroll to horizontal position 500</code></pre>
+<h3>clearInterval</h3>
+<p>Clears the setInterval. var is the value returned by setInterval call</p>
+<pre class="language-javascript"><code>clearInterval(var)</code></pre>
+<h3>clearTimeout</h3>
+<p>Clears the setTimeout. var is the value returned by setTimeout call</p>
+<pre class="language-javascript"><code>clearTimeout(var)</code></pre>
+<h3>stop</h3>
+<p>Stops the further resource loading</p>
+<pre class="language-javascript"><code>stop()</code></pre>
+<p></p></div><app-adsense adtype="ad" _nghost-sc50=""><div _ngcontent-sc50="" class="text-center"><div _ngcontent-sc50="" class="text-center"><ins _ngcontent-sc50="" data-ad-client="ca-pub-9655830461045889" data-ad-slot="7409118598" class="adsbygoogle" style="display: inline-block; width: 250px; height: 200px;"></ins></div><!----><!----><!----><!----></div></app-adsense></div><div><div>
+<h2>Query/Get Elements</h2>
+<p>The browser creates a DOM (Document Object Model) whenever a web page is loaded, and with the help of HTML DOM, one can access and modify all the elements of the HTML document.</p>
+<h3>querySelector</h3>
+<p>Selector to select first matching element</p>
+<pre class="language-javascript"><code>document.querySelector('css-selectors')</code></pre>
+<h3>querySelectorAll</h3>
+<p>A selector to select all matching elements</p>
+<pre class="language-javascript"><code>document.querySelectorAll('css-selectors', ...)</code></pre>
+<h3>getElementsByTagName</h3>
+<p>Select elements by tag name</p>
+<pre class="language-javascript"><code>document.getElementsByTagName('element-name')</code></pre>
+<h3>getElementsByClassName</h3>
+<p>Select elements by class name</p>
+<pre class="language-javascript"><code>document.getElementsByClassName('class-name')</code></pre>
+<h3>Get Element by Id</h3>
+<p>Select an element by its id</p>
+<pre class="language-javascript"><code>document.getElementById('id')</code></pre>
+<h2>Creating Elements</h2>
+<p>Create new elements in the DOM</p>
+<h3>createElement</h3>
+<p>Create a new element</p>
+<pre class="language-javascript"><code>document.createElement('div')</code></pre>
+<h3>createTextNode</h3>
+<p>Create a new text node</p>
+<pre class="language-javascript"><code>document.createTextNode('some text here')</code></pre>
+<p>&nbsp;</p>
+
+        </div>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    </body>
+</html>
