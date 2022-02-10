@@ -72,7 +72,7 @@
         <input type = "hidden" name = "_next" value = "https://ascodes21.github.io/AsCodes.github.io/Contact%20me.htm">
         <div class="mb-3">
   <label for="formGroupExampleInput" class="form-label">Your name</label>
-  <input type="text" class="form-control" id="formGroupExampleInput" id = "name" placeholder="Your name" required>
+   <textarea class="form-control" id="exampleFormControlTextarea1" id = "name" class = "name" placeholder = "Your name" rows="1" required></textarea>
 </div>
       <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Email address</label>
@@ -100,8 +100,8 @@
   </body>
       <script>
       $("#submit").click(function(){
-        let name = $("#name").val()
-        $("#subject").val("A new mail by "+name+".")
+        let name = $("textarea").val()
+        $("#subject").val(`A new mail by ${name}.`)
       })
     </script>
 </html>
