@@ -178,147 +178,148 @@ while True:
             </li>
             <li>
                 <b>TicTacToe.py</b>-Best childhood game for 2 players.
-                <pre class = "language-python"><code>board = [
-                    ["#","#","#"],
-                    ["#","#","#"],
-                    ["#","#","#"]
-                ]
-                
-                def checkTie():
-                    if "#" not in board[0] and "#" not in board[1] and "#" not in board[2]:
-                        print("This is a tie.")
-                        return True
-                
-                def displayBoard():
-                    print(f'''
-                    {board[0][0]}|{board[0][1]}|{board[0][2]}
-                    ------
-                    {board[1][0]}|{board[1][1]}|{board[1][2]}
-                    ------
-                    {board[2][0]}|{board[2][1]}|{board[2][2]}
-                    ''')
-                
-                def updateMove(r,c,p):
-                    board[r-1][c-1] = p   
-                
-                def allowedCheck(r,c):
-                    return board[r-1][c-1] == "#"
-                
-                displayBoard()
-                
-                def user1Turn():
-                    print("User 1 turn (O)")
-                    try:
-                        u1Row = int(input("Enter row number:\n"))
-                        u1Column = int(input("Enter column number:\n"))
-                        if(allowedCheck(u1Row,u1Column)):
-                            updateMove(u1Row,u1Column,"O")
-                        else:
-                            print("Invalid input try again.")
-                            displayBoard()
-                            user1Turn()
-                    except:
-                            print("Invalid input try again.")
-                            displayBoard()
-                            user1Turn()
-                
-                def user2Turn():
-                    print("User 2 turn (X)")
-                    try:
-                        u2Row = int(input("Enter row number:\n"))
-                        u2Column = int(input("Enter column number:\n"))
-                        if(allowedCheck(u2Row,u2Column)):
-                            updateMove(u2Row,u2Column,"X")
-                        else:
-                            print("Invalid input try again.")
-                            displayBoard()
-                            user2Turn()
-                    except:
-                            print("Invalid input try again.")
-                            displayBoard()
-                            user2Turn()
-                
-                def checkUser2win():
-                    if board[0][0] == "X" and board[0][1] == "X" and  board[0][2] == "X":
-                        print("User 2 (X) won!")
-                        return True
-                    elif board[1][0] == "X" and  board[1][1] == "X" and board[1][2] == "X":
-                        print("User 2 (X) won!")
-                        return True
-                    elif board[2][0] == "X" and board[2][1] == "X" and board[2][2] == "X":    
-                        print("User 2 (X) won!")
-                        return True  
-                    elif board[0][0] == "X" and  board[1][0] == "X" and board[2][0] == "X":
-                        print("User 2 (X) won!")
-                        return True
-                    elif board[0][1] == "X" and  board[1][1] == "X" and board[2][1] == "X":
-                        print("User 2 (X) won!")
-                        return True
-                    elif board[0][2] == "X" and  board[1][2] == "X" and board[2][2] == "X":
-                        print("User 2 (X) won!")
-                        return True
-                    elif board[0][0] == "X" and board[1][1] == "X" and board[2][2] == "X":
-                        print("User 2 (X) won!")
-                        return True
-                    elif board[0][2] == "X" and board[1][1] == "X" and board[2][0] == "X":
-                        print("User 2 (X) won!") 
-                        return True
-                    else:
-                        return False
-                
-                
-                def checkUser1win():
-                    if board[0][0] == "O" and board[0][1] == "O" and  board[0][2] == "O":
-                        print("User 1 (O) won!")
-                        return True
-                    elif board[1][0] == "O" and  board[1][1] == "O" and board[1][2] == "O":
-                        print("User 1 (O) won!")
-                        return True
-                    elif board[2][0] == "O" and board[2][1] == "O" and board[2][2] == "O":    
-                        print("User 1 (O) won!")
-                        return True   
-                    elif board[0][0] == "O" and  board[1][0] == "O" and board[2][0] == "O":
-                        print("User 1 (O) won!")
-                        return True
-                    elif board[0][1] == "O" and  board[1][1] == "O" and board[2][1] == "O":
-                        print("User 1 (O) won!")
-                        return True
-                    elif board[0][2] == "O" and  board[1][2] == "O" and board[2][2] == "O":
-                        print("User 1 (O) won!")
-                        return True
-                    elif board[0][0] == "O" and board[1][1] == "O" and board[2][2] == "O":
-                        print("User 1 (O) won!")
-                        return True
-                    elif board[0][2] == "O" and board[1][1] == "O" and board[2][0] == "O":
-                        print("User 1 (O) won!") 
-                        return True
-                    else:
-                        return False
-                
-                    
-                
-                while True:   
-                
-                    user1Turn()
-                
-                    if (checkUser1win()):
-                        displayBoard()        
-                        break
-                    
-                    if (checkTie()):
-                        displayBoard()
-                        break
-                
-                    displayBoard() 
-                
-                    user2Turn()
-                
-                    if(checkUser2win()):
-                        displayBoard()        
-                        break  
-                    displayBoard() 
-                
-                print("Thanks for playing!!")</code></pre>
+                <pre class = "language-python">
+<code>board = [
+    ["#","#","#"],
+    ["#","#","#"],
+    ["#","#","#"]
+]
+
+def checkTie():
+    if "#" not in board[0] and "#" not in board[1] and "#" not in board[2]:
+        print("This is a tie.")
+        return True
+
+def displayBoard():
+    print(f'''
+    {board[0][0]}|{board[0][1]}|{board[0][2]}
+    ------
+    {board[1][0]}|{board[1][1]}|{board[1][2]}
+    ------
+    {board[2][0]}|{board[2][1]}|{board[2][2]}
+    ''')
+
+def updateMove(r,c,p):
+    board[r-1][c-1] = p   
+
+def allowedCheck(r,c):
+    return board[r-1][c-1] == "#"
+
+displayBoard()
+
+def user1Turn():
+    print("User 1 turn (O)")
+    try:
+        u1Row = int(input("Enter row number:\n"))
+        u1Column = int(input("Enter column number:\n"))
+        if(allowedCheck(u1Row,u1Column)):
+            updateMove(u1Row,u1Column,"O")
+        else:
+            print("Invalid input try again.")
+            displayBoard()
+            user1Turn()
+    except:
+            print("Invalid input try again.")
+            displayBoard()
+            user1Turn()
+
+def user2Turn():
+    print("User 2 turn (X)")
+    try:
+        u2Row = int(input("Enter row number:\n"))
+        u2Column = int(input("Enter column number:\n"))
+        if(allowedCheck(u2Row,u2Column)):
+            updateMove(u2Row,u2Column,"X")
+        else:
+            print("Invalid input try again.")
+            displayBoard()
+            user2Turn()
+    except:
+            print("Invalid input try again.")
+            displayBoard()
+            user2Turn()
+
+def checkUser2win():
+    if board[0][0] == "X" and board[0][1] == "X" and  board[0][2] == "X":
+        print("User 2 (X) won!")
+        return True
+    elif board[1][0] == "X" and  board[1][1] == "X" and board[1][2] == "X":
+        print("User 2 (X) won!")
+        return True
+    elif board[2][0] == "X" and board[2][1] == "X" and board[2][2] == "X":    
+        print("User 2 (X) won!")
+        return True  
+    elif board[0][0] == "X" and  board[1][0] == "X" and board[2][0] == "X":
+        print("User 2 (X) won!")
+        return True
+    elif board[0][1] == "X" and  board[1][1] == "X" and board[2][1] == "X":
+        print("User 2 (X) won!")
+        return True
+    elif board[0][2] == "X" and  board[1][2] == "X" and board[2][2] == "X":
+        print("User 2 (X) won!")
+        return True
+    elif board[0][0] == "X" and board[1][1] == "X" and board[2][2] == "X":
+        print("User 2 (X) won!")
+        return True
+    elif board[0][2] == "X" and board[1][1] == "X" and board[2][0] == "X":
+        print("User 2 (X) won!") 
+        return True
+    else:
+        return False
+
+
+def checkUser1win():
+    if board[0][0] == "O" and board[0][1] == "O" and  board[0][2] == "O":
+        print("User 1 (O) won!")
+        return True
+    elif board[1][0] == "O" and  board[1][1] == "O" and board[1][2] == "O":
+        print("User 1 (O) won!")
+        return True
+    elif board[2][0] == "O" and board[2][1] == "O" and board[2][2] == "O":    
+        print("User 1 (O) won!")
+        return True   
+    elif board[0][0] == "O" and  board[1][0] == "O" and board[2][0] == "O":
+        print("User 1 (O) won!")
+        return True
+    elif board[0][1] == "O" and  board[1][1] == "O" and board[2][1] == "O":
+        print("User 1 (O) won!")
+        return True
+    elif board[0][2] == "O" and  board[1][2] == "O" and board[2][2] == "O":
+        print("User 1 (O) won!")
+        return True
+    elif board[0][0] == "O" and board[1][1] == "O" and board[2][2] == "O":
+        print("User 1 (O) won!")
+        return True
+    elif board[0][2] == "O" and board[1][1] == "O" and board[2][0] == "O":
+        print("User 1 (O) won!") 
+        return True
+    else:
+        return False
+
+    
+
+while True:   
+
+    user1Turn()
+
+    if (checkUser1win()):
+        displayBoard()        
+        break
+    
+    if (checkTie()):
+        displayBoard()
+        break
+
+    displayBoard() 
+
+    user2Turn()
+
+    if(checkUser2win()):
+        displayBoard()        
+        break  
+    displayBoard() 
+
+print("Thanks for playing!!")</code></pre>
             </li>            
         </ol>
 
